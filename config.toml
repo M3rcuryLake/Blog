@@ -1,0 +1,15 @@
+theme = "windy"
+languageCode = "en-us"
+baseurl = "/"
+title = "M3rcuryLake"
+
+author = "Ankit Mukherjee"
+
+
+[build]
+  writeStats = true
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"

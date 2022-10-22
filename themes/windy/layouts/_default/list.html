@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+    <article class=" px-6 mt-20 justify-self-center sm:px-4" style=" max-width: 40rem; ">
+	<h1 class="text-2xl md:text-3xl font-Nunito font-bold text-center mb-20 underline decoration-red-400" style="margin-top:30px">Blog Archive  (●'◡'●)</h1>
+	{{ range .Pages }}
+	<div>
+        <h1 class="text-sm text-center">{{ .PublishDate.Format "January 2, 2006" }}</h1>
+        <h1 class=" text-center text-3xl font-extrabold font-Neucha" style="margin-bottom:70px"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+		{{ .Summary }}...
+		<div class=" mt-20 mb-20">
+			<a href="{{ .Permalink }}" class="relative inline-block text-lg group">
+			<span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+			<span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+			<span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+			<span class="text-base relative">Read More ➡</span>
+			</span>
+			<span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+			</a>
+		</div>
+        <hr class="content-center mx-auto" style=" border-bottom-width: 8px; margin-top:60px; margin-bottom:60px; border-style: dotted; border-color: rgb(255, 189, 182); width: 2.5rem; border-top-width: 0px;">
+	</div>
+	{{ end }}
+    </article>
+
+{{ end }}
