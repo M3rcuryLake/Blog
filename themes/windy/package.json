@@ -10,13 +10,13 @@
         "start": "hugo --gc"
     },
     "devDependencies": {
-        "@fullhuman/postcss-purgecss": "^4.x",
+        "@fullhuman/postcss-purgecss": "^4.1.3",
         "@tailwindcss/aspect-ratio": "^0.x",
         "@tailwindcss/forms": "^0.x",
         "@tailwindcss/line-clamp": "^0.x",
         "@tailwindcss/typography": "^0.5.x",
         "autoprefixer": "^10.x",
-        "postcss": "^8.x",
+        "postcss": "^8.4.18",
         "postcss-cli": "^10.x",
         "tailwindcss": "^3.x"
     },
