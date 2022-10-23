@@ -1,10 +1,9 @@
 {
-    "name": "hugo-theme-tailwindcss-starter",
+    "name": "M3rcurylake",
     "version": "0.3.0",
-    "description": "Starter files for a Hugo theme with Tailwindcss",
+    "description": "A personal Blog",
     "main": "index.js",
-    "repository": "https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter",
-    "author": "dirkolbrich <github@dirkolbrich.de>",
+    "author": "Ankit Mukherjee",
     "license": "MIT",
     "scripts": {
         "start": "hugo --gc"
