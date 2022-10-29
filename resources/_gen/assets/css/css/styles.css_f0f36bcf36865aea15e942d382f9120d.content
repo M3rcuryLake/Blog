@@ -1112,6 +1112,9 @@ select{
 .max-w-xl{
   max-width: 36rem;
 }
+.max-w-3xl{
+  max-width: 48rem;
+}
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -1274,11 +1277,11 @@ select{
 .p-1{
   padding: 0.25rem;
 }
-.p-3{
-  padding: 0.75rem;
-}
 .p-6{
   padding: 1.5rem;
+}
+.p-3{
+  padding: 0.75rem;
 }
 .p-2{
   padding: 0.5rem;
@@ -1317,8 +1320,8 @@ select{
 .pb-20{
   padding-bottom: 5rem;
 }
-.pr-3{
-  padding-right: 0.75rem;
+.pr-2{
+  padding-right: 0.5rem;
 }
 .pb-5{
   padding-bottom: 1.25rem;
@@ -1352,9 +1355,6 @@ select{
 }
 .font-PatrickHand{
   font-family: Patrick Hand;
-}
-.font-DancingScript{
-  font-family: Dancing Script;
 }
 .font-sans{
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -1516,16 +1516,9 @@ select{
 .ease-linear{
   transition-timing-function: linear;
 }
-.hover\:border-4:hover{
-  border-width: 4px;
-}
 .hover\:border-white:hover{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-.hover\:border-amber-200:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(253 230 138 / var(--tw-border-opacity));
 }
 .hover\:bg-red-400:hover{
   --tw-bg-opacity: 1;
