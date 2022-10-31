@@ -1,13 +1,13 @@
 {{ define "main" }}
 
-    <article class=" px-6 mt-20 justify-self-center sm:px-4" style=" max-width: 40rem; ">
-	<h1 class="text-2xl md:text-3xl font-Nunito font-bold text-center mb-20 underline decoration-red-400" style="margin-top:30px">Blog Archive  (●'◡'●)</h1>
+    <article class=" px-6 justify-self-center sm:px-4" style=" max-width: 40rem; ">
+	<h1 class="text-2xl md:text-3xl font-Nunito font-bold text-center mb-20 underline decoration-red-400 md:mt-10">Blog Archive  (●'◡'●)</h1>
 	{{ range .Pages }}
 	<div>
         <h1 class="text-sm text-center">{{ .PublishDate.Format "January 2, 2006" }}</h1>
         <h1 class=" text-center text-3xl font-extrabold font-Neucha" style="margin-bottom:70px"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 		{{ .Summary }}...
-		<div class=" mt-20 mb-20">
+		<div class="mt-20 mb-20">
 			<a href="{{ .Permalink }}" class="relative inline-block text-lg group">
 			<span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
 			<span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
