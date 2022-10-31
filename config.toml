@@ -1,6 +1,6 @@
 theme = "windy"
 languageCode = "en-us"
-baseurl = "/"
+baseurl = "https://m3rcurylake.pages.dev/"
 title = "M3rcuryLake"
 
 author = "Ankit Mukherjee"
