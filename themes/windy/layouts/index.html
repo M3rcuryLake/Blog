@@ -1,16 +1,20 @@
 {{ define "main" }}
-<article class="px-6 text-center md:max-w-4xl text-gray-700" style="">
+<article class="px-6 text-center max-w-2xl text-gray-700" style="">
     <img class="w-40 h-40 mb-20 rounded-full mx-auto border-4 border-amber-200" src="/pfp.jpg" alt="Allec Scott">
-    <h1 class="font-FredokaOne mb-3 font-semibold text-4xl" style="--tw-text-opacity: 1; color: rgb(248 113 113 / var(--tw-text-opacity));">Hi, I am Allec...</h1>
-    <p class="text-slate-700 font-semibold font-Neucha  mb-20 mt-2">-aka. Ankit Mukherjee</p>
-    <p class="text-xl mb-10 font-Montserrat" style="margin-bottom: 2.5rem ;">
+    <h1 class="font-Pacifico mb-3 font-semibold text-4xl" style="--tw-text-opacity: 1; color: rgb(248 113 113 / var(--tw-text-opacity));">Hi, I am Allec...</h1>
+    <p class="text-slate-700 font-semibold font-PatrickHand  mb-10 mt-2">-aka. Ankit Mukherjee</p>
+    <div class="flex justify-center border rounded-full max-w-fit mx-auto mb-20 py-2 px-2">
+    <a class="text-base font-PatrickHand mr-3 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_6px] hover:bg-[length:100%_100%] transition-[background-size]"><i>Maybe Lofi? </i></a><div class="" data-video="jfKfPfyJRdk" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+   </div>
+    <p class="text-xl mb-10 font-Neucha" style="margin-bottom: 2.5rem ;">
         I'm a wierd computer enthusiast who tinkers in all things computer...I'm also a rookie in web development and UI designing, server setting, cloud and system administration and would like to provide any possible help to fellow developers or entrepreneurs
       </p>
-      <p class=" text-xl font-Montserrat" style="margin-bottom: 2.5rem ;">
+      <p class=" text-xl font-Neucha" style="margin-bottom: 2.5rem ;">
         If you want to contact me....prolly the best way is through <a href="https://instagram.com/run.____.away" class="font-bold" style="--tw-text-opacity: 1; color: rgb(248 113 113 / var(--tw-text-opacity));" target="_blank">Instagram</a>. I do have a <a href="mailto:ankitmukherjee814@gmail.com" class="font-bold" style="--tw-text-opacity: 1; color: rgb(248 113 113 / var(--tw-text-opacity));" target="_blank">Email</a> too, but im bad at checking them out...or you can find me all over the web with the pen-name Allec Scott
     </p>
-    <p class="text-xl font-Montserrat" style="margin-bottom: 2.5rem ;">I absolutely love coding and it is a inseperable part of my daily life now-a-days, like I can put on lofi music and code for the rest of the day (and that is what i am right now)....Now all I am utilising my free time (all of it, ig) taking this site onilne and nearly posting regularly and updating the site weekly....Oh...and I also have a Onion hidden service blog, <a href="https://silentlake.onrender.com/index.php" class="font-bold text-red-400">SilentLake</a>, and still another Dark-web server <a href="ldxmpkdfy5ecmro54fq5g4shkhlcqguvkgllhyuo66vcwdgdx3g5q2ad.onion" class="font-bold text-red-400">here</a>...</p>
-    <p class="text-xl font-Montserrat" style="margin-bottom: 2.5rem ;">I am hosting this site in cloudfare pages, for now, as I absolutely love their extremely fast conectivity, and will probably use a TLD sometime later, or never...who knows what happens next right?</p>
+    <p class="text-xl font-Neucha" style="margin-bottom: 2.5rem ;">I absolutely love coding and it is a inseperable part of my daily life now-a-days, like I can put on lofi music and code for the rest of the day (and that is what i am right now)....Now all I am utilising my free time (all of it, ig) taking this site onilne and nearly posting regularly and updating the site weekly....Oh...and I also have a Onion hidden service blog, <a href="https://silentlake.onrender.com/index.php" class="font-bold text-red-400">SilentLake</a>, and still another Dark-web server <a href="ldxmpkdfy5ecmro54fq5g4shkhlcqguvkgllhyuo66vcwdgdx3g5q2ad.onion" class="font-bold text-red-400">here</a>...</p>
+    <p class="text-xl font-Neucha" style="margin-bottom: 2.5rem ;">I am hosting this site in cloudfare pages, for now, as I absolutely love their extremely fast conectivity, and will probably use a TLD sometime later, or never...who knows what happens next right?</p>
 </div>
 <a href="/posts/" class="mt-20 relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-red-500 rounded-xl group">
   <span class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-red-700 rounded group-hover:-mr-4 group-hover:-mt-4">
@@ -25,4 +29,7 @@
   </p>
 </div>
 </article>
+<script>
+  function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"pause.png":"play-button.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}
+</script>
 {{ end }}
