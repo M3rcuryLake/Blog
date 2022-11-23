@@ -1,0 +1,21 @@
+{{ define "main" }}
+<h1 class="p-3 font-PermanentMarker text-xl bold italic">Well...A way to eternity.</h1>
+<article class="text-center max-w-xl mb-10 p-3">
+    <div class="relative overflow-hidden rounded-lg shadow-lg mb-10">
+        <img class="object-cover w-full h-full" src="/alone-sad.gif" alt="Flower and sky"/>
+    
+        <div class="absolute top-0 left-0 px-6 py-4">
+          <h4 class="mt-44 font-semibold tracking-tight text-white bold font-mono text-3xl ">Be Happy.</h4>
+        </div>
+      </div>
+    <div class="flex justify-center max-w-fit mx-auto py-2 px-2 mb-20">
+        <a class="text-xl font-PatrickHand  mr-3 font-bold "><i>Listen to Lofi Radio ʕ•́ᴥ•̀ʔっ </i></a><div class="" data-video="jfKfPfyJRdk" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
+        <script src="https://www.youtube.com/iframe_api"></script>
+       </div>
+    <p class="font-PatrickHand">I made this place just so that I can listen to lofi (which i do all the time) without using the bulky, crappy, irresponsive and trash interface of youtube and seek peace while im working...If u want to hangout, u r welcome</p>
+    <p class="font-PatrickHand mt-10">All props to lofi-girl for making these masterpeices</p>
+</article>
+<script>
+    function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"pause.png":"play-button.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}
+</script>  
+{{end}}
