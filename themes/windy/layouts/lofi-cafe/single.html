@@ -1,22 +1,36 @@
-{{ define "main" }}
-<article class="text-center md:text-start max-w-xl mb-10 md:p-3 p-5">
-  <h1 class="p-3 font-FredokaOne  text-xl bold italic">Well...A way to eternity.</h1>
-    <img class="w-full h-full my-10 mx-auto md:hidden block" src="/LainDressSlow.gif" style="width: 252px; height:401;" alt="">
-    <div class="hidden md:block mt-10 relative overflow-hidden rounded-2xl shadow-lg mb-10 ">
-        <img class="object-cover w-full h-full " src="/alone-sad.gif" alt="Flower and sky"/>
+{{ partial "head.html" . }}
+<article class="md:text-center ">
+<div class="md:hidden block">
+    <img class="w-full h-full object-cover md:hidden block" src="/wp9221940.gif" alt="">
+    <div class="absolute top-0 backdrop:blur-2xl mt-10 bg-white/20 shadow-md rounded-xl left-0 ml-3 px-6 py-4">
+      <h4 class="font-semibold tracking-tight text-white bold font-Pacifico text-3xl align-text-bottom block md:hidden ">Be Happy.</h4>
+      </div>
+      <div class="text-white text-lg absolute text-start font-bold top-24 max-w-lg backdrop:blur-2xl mt-10 m-3 bg-white/20 shadow-md rounded-xl left-0 px-6 py-4">
+        <p class="font-PatrickHand ">I made this place just so that I can listen to lofi (which i do all the time) without using the bulky, crappy, irresponsive and trash interface of youtube and seek peace while im working...If u want to hangout, u r welcome.</p>
+        <p class="font-PatrickHand mt-10 mb-10">All props to lofi-girl for making these masterpieces.</p>
+        <a href="{{ .Site.Home.Permalink }}" class="font-BebasNeue tracking-widest rounded p-1 hover:bg-red-400 border-2 hover:border-red-400 transition-all duration-300">./Go back</a>
+    </div>
+  </div>
+</div>
+    <div class="hidden md:block  ">
+        <img class="object-cover w-full h-full " src="/2825710.gif" alt="Flower and sky"/>
     
-        <div class="absolute top-0 left-0 px-6 py-4">
-          <h4 class="md:mt-44 mt-32 font-semibold tracking-tight text-white bold font-mono text-3xl mb-4 hidden md:block ">Be Happy.</h4>
+        <div class="absolute top-0 backdrop:blur-2xl mt-10 bg-white/20 shadow-md rounded-xl left-10 px-6 py-4">
+          <h4 class="font-semibold tracking-tight text-white bold font-Pacifico text-3xl align-text-bottom hidden md:block ">Be Happy.</h4>
+          </div>
+          <div class="text-white text-lg absolute text-start font-bold top-24 max-w-xl backdrop:blur-2xl mt-10 bg-white/20 shadow-md rounded-xl left-10 px-6 py-4">
+            <p class="font-PatrickHand ">I made this place just so that I can listen to lofi (which i do all the time) without using the bulky, crappy, irresponsive and trash interface of youtube and seek peace while im working...If u want to hangout, u r welcome.</p>
+            <p class="font-PatrickHand mt-10 mb-10">All props to lofi-girl for making these masterpieces.</p>
+            <a href="{{ .Site.Home.Permalink }}" class="font-BebasNeue tracking-widest rounded p-1 hover:bg-red-400 border-2 hover:border-red-400 transition-all duration-300">./Go back</a>
         </div>
       </div>
-    <div class="flex justify-center max-w-fit mx-auto py-2 px-2 mb-20">
-        <a class="text-xl font-PatrickHand  mr-3 font-bold bg-gradient-to-r from-red-600 via-amber-600 to-yellow-500 bg-clip-text text-transparent"><i>Listen to Lofi Radio ʕ•́ᴥ•̀ʔっ </i></a><div class="" data-video="jfKfPfyJRdk" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
+    <div class="absolute bottom-20 mb-20 md:left-10 left-3 px-6 py-4 ">
+        <a class="text-5xl font-BebasNeue   mr-3 font-extrabold text-white">Listen to Lofi Radio ~</a><div class="bottom-20 left-10" data-video="jfKfPfyJRdk" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
         <script src="https://www.youtube.com/iframe_api"></script>
-       </div>
-    <p class="font-PatrickHand text-center">I made this place just so that I can listen to lofi (which i do all the time) without using the bulky, crappy, irresponsive and trash interface of youtube and seek peace while im working...If u want to hangout, u r welcome.</p>
-    <p class="font-PatrickHand text-center mt-10">All props to lofi-girl for making these masterpieces.</p>
+    </div>
+    <p class="font-PatrickHand hidden text-center">I made this place just so that I can listen to lofi (which i do all the time) without using the bulky, crappy, irresponsive and trash interface of youtube and seek peace while im working...If u want to hangout, u r welcome.</p>
+    <p class="font-PatrickHand hidden text-center mt-10">All props to lofi-girl for making these masterpieces.</p>
 </article>
 <script>
-    function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"pause.png":"play-button.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}
+    function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand; height:60px ; margin-top: 20px",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"button.png":"button.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}
 </script>  
-{{end}}
