@@ -988,6 +988,9 @@ select{
 .bottom-20{
   bottom: 5rem;
 }
+.bottom-2{
+  bottom: 0.5rem;
+}
 .z-10{
   z-index: 10;
 }
@@ -1049,6 +1052,9 @@ select{
 .mb-14{
   margin-bottom: 3.5rem;
 }
+.ml-36{
+  margin-left: 9rem;
+}
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -1106,6 +1112,9 @@ select{
 .h-10{
   height: 2.5rem;
 }
+.h-6{
+  height: 1.5rem;
+}
 .h-9{
   height: 2.25rem;
 }
@@ -1129,6 +1138,9 @@ select{
 }
 .w-10{
   width: 2.5rem;
+}
+.w-1{
+  width: 0.25rem;
 }
 .w-9{
   width: 2.25rem;
@@ -1225,6 +1237,9 @@ select{
 .justify-center{
   justify-content: center;
 }
+.justify-between{
+  justify-content: space-between;
+}
 .justify-self-center{
   justify-self: center;
 }
@@ -1300,6 +1315,10 @@ select{
 }
 .bg-white\/20{
   background-color: rgb(255 255 255 / 0.2);
+}
+.bg-orange-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(194 65 12 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -1703,6 +1722,12 @@ select{
   .md\:mb-0{
     margin-bottom: 0px;
   }
+  .md\:mb-40{
+    margin-bottom: 10rem;
+  }
+  .md\:ml-40{
+    margin-left: 10rem;
+  }
   .md\:mt-4{
     margin-top: 1rem;
   }
@@ -1768,3 +1793,45 @@ select{
 /* Site Specific */
 /* put site specific css styles here using the @layer directive */
 /* see https://tailwindcss.com/docs/functions-and-directives#layer */
+@-webkit-keyframes bounce {
+  10% {
+    transform: scaleY(0.3); /* start by scaling to 30% */
+  }
+
+  30% {
+    transform: scaleY(1); /* scale up to 100% */
+  }
+
+  60% {
+    transform: scaleY(0.5); /* scale down to 50% */
+  }
+
+  80% {
+    transform: scaleY(0.75); /* scale up to 75% */
+  }
+
+  100% {
+    transform: scaleY(0.6); /* scale down to 60% */
+  }
+}
+@keyframes bounce {
+  10% {
+    transform: scaleY(0.3); /* start by scaling to 30% */
+  }
+
+  30% {
+    transform: scaleY(1); /* scale up to 100% */
+  }
+
+  60% {
+    transform: scaleY(0.5); /* scale down to 50% */
+  }
+
+  80% {
+    transform: scaleY(0.75); /* scale up to 75% */
+  }
+
+  100% {
+    transform: scaleY(0.6); /* scale down to 60% */
+  }
+}
