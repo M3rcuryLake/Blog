@@ -982,11 +982,11 @@ select{
 .left-10{
   left: 2.5rem;
 }
-.bottom-20{
-  bottom: 5rem;
-}
 .left-3{
   left: 0.75rem;
+}
+.bottom-20{
+  bottom: 5rem;
 }
 .z-10{
   z-index: 10;
@@ -1045,6 +1045,9 @@ select{
 }
 .mt-10{
   margin-top: 2.5rem;
+}
+.mb-14{
+  margin-bottom: 3.5rem;
 }
 .mb-6{
   margin-bottom: 1.5rem;
@@ -1459,10 +1462,6 @@ select{
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
 .font-semibold{
   font-weight: 600;
 }
@@ -1689,6 +1688,9 @@ select{
   }
 }
 @media (min-width: 768px){
+  .md\:bottom-20{
+    bottom: 5rem;
+  }
   .md\:left-10{
     left: 2.5rem;
   }
@@ -1752,6 +1754,10 @@ select{
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
   .md\:text-2xl{
     font-size: 1.5rem;
