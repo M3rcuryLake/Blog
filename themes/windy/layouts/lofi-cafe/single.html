@@ -1,9 +1,12 @@
 {{ partial "head.html" . }}
+<script>
+    function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand; height:60px ; margin-top: 20px; margin-right-20px",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"button.png":"button.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}
+</script>  
 <article class="md:text-center ">
 <div class="md:hidden block">
     <img class="w-full h-full object-cover md:hidden block" src="/wp9221940.gif" alt="">
     <div class="absolute top-0 backdrop:blur-2xl mt-10 bg-white/20 shadow-md rounded-xl left-0 ml-3 px-6 py-4">
-      <h4 class="font-semibold tracking-tight text-white bold font-Pacifico text-2xl align-text-bottom block md:hidden ">Be Happy.</h4>
+      <h4 class="font-semibold tracking-tight text-white bold font-Neucha text-2xl align-text-bottom block md:hidden ">Be Happy.</h4>
       </div>
       <div class="text-white text-base absolute text-start font-bold top-24 max-w-lg backdrop:blur-2xl mt-10 m-3 bg-white/20 shadow-md rounded-xl left-0 px-6 py-4">
         <p class="font-PatrickHand ">I made this place just so that I can listen to lofi (which i do all the time) without using the bulky, crappy, irresponsive and trash interface of youtube and seek peace while im working...If u want to hangout, u r welcome.</p>
@@ -16,7 +19,7 @@
         <img class="object-cover w-full h-full " src="/jake.gif" alt="Flower and sky"/>
     
         <div class="absolute top-0 backdrop:blur-2xl mt-10 bg-white/20 shadow-md rounded-xl left-10 px-6 py-4">
-          <h4 class="font-semibold tracking-tight text-white bold font-Pacifico text-3xl align-text-bottom hidden md:block ">Be Happy.</h4>
+          <h4 class="font-semibold tracking-tight text-white font-bold font-Neucha text-3xl align-text-bottom hidden md:block ">Be Happy.</h4>
           </div>
           <div class="text-white text-lg absolute text-start font-bold top-24 max-w-xl backdrop:blur-2xl mt-10 bg-white/20 shadow-md rounded-xl left-10 px-6 py-4">
             <p class="font-PatrickHand ">I made this place just so that I can listen to lofi (which i do all the time) without using the bulky, crappy, irresponsive and trash interface of youtube and seek peace while im working...If u want to hangout, u r welcome.</p>
@@ -39,6 +42,4 @@
     <p class="font-PatrickHand hidden text-center">I made this place just so that I can listen to lofi (which i do all the time) without using the bulky, crappy, irresponsive and trash interface of youtube and seek peace while im working...If u want to hangout, u r welcome.</p>
     <p class="font-PatrickHand hidden text-center mt-10">All props to lofi-girl for making these masterpieces.</p>
 </article>
-<script>
-    function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand; height:60px ; margin-top: 20px; margin-right-20px",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"button.png":"button.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}
-</script>  
+
