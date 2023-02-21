@@ -972,6 +972,10 @@ h1{
   left: 1.75rem;
   right: 1.75rem;
 }
+.inset-x-0{
+  left: 0px;
+  right: 0px;
+}
 .top-0{
   top: 0px;
 }
@@ -989,9 +993,6 @@ h1{
 }
 .top-24{
   top: 6rem;
-}
-.bottom-72{
-  bottom: 18rem;
 }
 .z-10{
   z-index: 10;
@@ -1049,8 +1050,8 @@ h1{
 .ml-3{
   margin-left: 0.75rem;
 }
-.mb-40{
-  margin-bottom: 10rem;
+.mb-28{
+  margin-bottom: 7rem;
 }
 .mb-2{
   margin-bottom: 0.5rem;
@@ -1121,11 +1122,11 @@ h1{
 .h-10{
   height: 2.5rem;
 }
-.h-screen{
-  height: 100vh;
-}
 .h-6{
   height: 1.5rem;
+}
+.h-screen{
+  height: 100vh;
 }
 .h-9{
   height: 2.25rem;
@@ -1722,9 +1723,6 @@ h1{
     right: 0px;
     bottom: 0px;
     left: 0px;
-  }
-  .md\:left-10{
-    left: 2.5rem;
   }
   .md\:bottom-24{
     bottom: 6rem;

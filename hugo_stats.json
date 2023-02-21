@@ -61,7 +61,6 @@
       "border-gray-900",
       "border-slate-600",
       "bottom-0",
-      "bottom-72",
       "container",
       "content-center",
       "cursor-pointer",
@@ -148,18 +147,16 @@
       "mb-16",
       "mb-2",
       "mb-20",
+      "mb-28",
       "mb-3",
-      "mb-40",
       "mb-5",
       "mb-6",
-      "md:",
       "md:absolute",
       "md:block",
       "md:bottom-24",
       "md:flex",
       "md:hidden",
       "md:inset-0",
-      "md:left-10",
       "md:m-0",
       "md:mb-0",
       "md:mb-10",
@@ -280,7 +277,8 @@
       "z-10"
     ],
     "ids": [
-      "youtube-audio"
+      "youtube-audio1",
+      "youtube-audio2"
     ]
   }
 }

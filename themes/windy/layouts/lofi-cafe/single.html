@@ -1,6 +1,25 @@
 {{ partial "head.html" . }}
 <script>
-function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand; height:60px ; margin-left: auto; margin-right: auto; margin-top:20px",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"button.png":"button.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}
+let mediaBreakpointSize = 600; /* Change this size and test outcome */
+let scriptTag = '';
+if (document.documentElement.clientWidth < mediaBreakpointSize) {
+  scriptTag = document.createElement("script");
+  let content = 'function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio1"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand; height:60px ; margin-left: auto; margin-right: auto; margin-top:20px",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"button.png":"button.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}';
+  scriptTag.setAttribute('type', 'text/javascript');
+  scriptTag.defer = true;
+  scriptTag.textContent = content;
+  document.head.appendChild(scriptTag);
+  
+} else {
+  scriptTag = document.createElement("script");
+  let content = 'function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio2"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand; height:60px ; margin-left: auto; margin-right: auto; margin-top:20px",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"button.png":"button.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}';
+  scriptTag.setAttribute('type', 'text/javascript');
+  scriptTag.defer = true;
+  scriptTag.textContent = content;
+  document.head.appendChild(scriptTag);
+}
+
+console.log(scriptTag)
 </script>  
 <article>
 <div class="md:hidden block">
@@ -11,7 +30,9 @@ function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio"
         <p class="font-medium text-xs font-RockSalt">"Be Happy"</p>
         <img class="w-40 h-40 my-10 rounded-full mx-auto border-4 shadow-xl" src="/lofi-girl.gif" alt="Lofi Girl">
         <p class="font-RockSalt font-extrabold text-lg">Lofi Cafe</p>
-        <p class="font-Neucha font-semibold mb-40">I love sad winters.</p>
+        <p class="font-Neucha font-semibold mb-28">I love sad winters.</p>
+        <div class="mb-10" data-video="jfKfPfyJRdk" data-autoplay="0" data-loop="1" id="youtube-audio1"></div>
+        <script src="https://www.youtube.com/iframe_api"></script>
         <p class="font-FredokaOne text-3xl mb-2">*</p>
         <div class="flex justify-between w-10 h-6 mx-auto">
           <span class="w-1 h-full bg-orange-700 rounded " style="animation: bounce 2.2s ease infinite alternate; animation-delay: 2.2s;"> </span>
@@ -49,9 +70,8 @@ function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio"
           <a class="md:text-5xl text-4xl font-BebasNeue mr-3 font-extrabold text-white hidden md:block mx-auto py-4 md:mt-24">~ Listen to Lofi Radio ~</a>
         </div>
     </div>
-    <div class="absolute inset-x-0 md: md:bottom-24 bottom-72" data-video="jfKfPfyJRdk" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
+   <div class="absolute inset-x-0 md:bottom-24 " data-video="jfKfPfyJRdk" data-autoplay="0" data-loop="1" id="youtube-audio2"></div>
     <script src="https://www.youtube.com/iframe_api"></script>
 
     
 </article>
-
