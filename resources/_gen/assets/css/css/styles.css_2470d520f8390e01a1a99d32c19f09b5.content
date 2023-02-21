@@ -972,10 +972,6 @@ h1{
   left: 1.75rem;
   right: 1.75rem;
 }
-.inset-x-0{
-  left: 0px;
-  right: 0px;
-}
 .top-0{
   top: 0px;
 }
@@ -994,8 +990,8 @@ h1{
 .top-24{
   top: 6rem;
 }
-.bottom-80{
-  bottom: 20rem;
+.bottom-72{
+  bottom: 18rem;
 }
 .z-10{
   z-index: 10;
@@ -1333,10 +1329,6 @@ h1{
 }
 .bg-white\/20{
   background-color: rgb(255 255 255 / 0.2);
-}
-.bg-red-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\/wp9221940\.gif\'\)\]{
   background-image: url('/wp9221940.gif');
@@ -1730,6 +1722,9 @@ h1{
     right: 0px;
     bottom: 0px;
     left: 0px;
+  }
+  .md\:left-10{
+    left: 2.5rem;
   }
   .md\:bottom-24{
     bottom: 6rem;
