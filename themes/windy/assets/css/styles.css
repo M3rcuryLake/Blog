@@ -30,3 +30,8 @@
     transform: scaleY(0.6); /* scale down to 60% */
   }
 }
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+}
