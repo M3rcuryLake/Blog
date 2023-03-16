@@ -1115,6 +1115,9 @@ h1{
 .h-10{
   height: 2.5rem;
 }
+.h-60{
+  height: 15rem;
+}
 .h-6{
   height: 1.5rem;
 }
@@ -1321,8 +1324,8 @@ h1{
   --tw-bg-opacity: 1;
   background-color: rgb(194 65 12 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\/2035653\.jpg\'\)\]{
-  background-image: url('/2035653.jpg');
+.bg-\[url\(\'\/lofmobile\.gif\'\)\]{
+  background-image: url('/lofmobile.gif');
 }
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
