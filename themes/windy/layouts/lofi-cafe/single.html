@@ -4,7 +4,7 @@ let mediaBreakpointSize = 600; /* Change this size and test outcome */
 let scriptTag = '';
 if (document.documentElement.clientWidth < mediaBreakpointSize) {
   scriptTag = document.createElement("script");
-  let content = 'function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio1"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand; height:60px ; margin-left: auto; margin-right: auto; margin-top:20px",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"pause.png":"play.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}';
+  let content = 'function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio1"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand; height:60px ; margin-left: auto; margin-right: auto; margin-top:10px",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"pause.png":"play.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}';
   scriptTag.setAttribute('type', 'text/javascript');
   scriptTag.textContent = content;
   document.head.appendChild(scriptTag);
@@ -22,8 +22,8 @@ console.log(scriptTag)
 <article>
 <div class="md:hidden block">
     <div class="h-full w-full bg-no-repeat bg-cover bg-center bg-fixed text-white bg-[url('/lofmobile.gif')] pt-10 px-6">
-      <div class="absolute inset-x-10 top-10 bottom-10 text-center pt-10 rounded-2xl max-w-sm mx-auto shadow-xl bg-gradient-to-b from-[#000000] via-transparent to-[#1A120B]">
-      <div class="mt-14" >
+      <div class="absolute inset-x-10 top-10 bottom-10 text-center pt-10 rounded-2xl max-w-sm mx-auto shadow-xl bg-gradient-to-b from-black via-transparent to-black">
+      <div class="mt-5" >
         <p class="font-Neucha text-xs font-semibold">Why dont you try, and</p>
         <p class="font-medium text-xs font-RockSalt">"Be Happy"</p>
         <img class="w-40 h-60 mt-10 rounded-full mx-auto" src="/lain2.gif" alt="lain">
@@ -35,7 +35,7 @@ console.log(scriptTag)
           <span class="w-1 h-full bg-orange-700 rounded " style="animation: bounce 2.2s ease infinite alternate; animation-delay: 2.2s;"> </span>
         </div>
         <p class="font-RockSalt font-extrabold text-lg">Lofi Cafe</p>
-        <p class="font-Neucha font-semibold mb-10">I love sad winters.</p>
+        <p class="font-Neucha font-semibold mb-5">I love sad winters.</p>
         <div class="mb-10" data-video="jfKfPfyJRdk" data-autoplay="0" data-loop="1" id="youtube-audio1"></div>
         <script src="https://www.youtube.com/iframe_api"></script>
         
@@ -46,8 +46,8 @@ console.log(scriptTag)
 </div>
     <div class="hidden md:block relative text-center ">
       <div class="h-full w-full bg-no-repeat bg-cover bg-center bg-fixed text-white bg-[url('/clouds.jpg')] pt-10 px-6">
-        <div class="absolute inset-x-7 top-10 bottom-10 text-center p-10 rounded-2xl mx-auto shadow-xl bg-gradient-to-b from-[#000000] via-transparent to-[#1A120B]">
-        <div class="mt-28" >
+        <div class="absolute inset-x-7 top-10 bottom-10 text-center p-10 rounded-2xl mx-auto shadow-xl bg-gradient-to-b from-black via-transparent to-black">
+        <div class="mt-10" >
           <p class="font-Neucha text-xs font-semibold">Why dont you try, and</p>
           <p class="font-medium text-xs font-RockSalt">"Be Happy"</p>
           <img class="w-40 h-60 mt-10 rounded-full mx-auto" src="/lain2.gif" alt="lain">
