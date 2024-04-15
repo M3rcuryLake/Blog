@@ -8,16 +8,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily :{
-        DancingScript :['Dancing Script'],
-        Montserrat :['Montserrat'],
         Neucha :['Neucha'],
         Nunito :['Nunito'],
         Pacifico :['Pacifico'],
         PatrickHand :['Patrick Hand'],
         PermanentMarker :['Permanent Marker'],
         BebasNeue :['Bebas Neue'],
-        FredokaOne :['Fredoka One'],
-        RockSalt : ['Rock Salt']
+        RockSalt : ['Rock Salt'],
+        UbuntuMono : ['Ubuntu Mono'],
+        VT323 : ['VT323'],
+        Fira : ['Fira Mono'],
       }
     },
   },

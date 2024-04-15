@@ -2,9 +2,19 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{ partial "head.html" . }}
 
-<body class="font-Nunito flex flex-col min-h-screen ">
+<body class="font-UbuntuMono text-white bg-no-repeat overflow-x-hidden bg-cover bg-fixed w-screen" style="background-image: url('../../2.gif');
+font-family: Noto Sans Display;
+color: #eee;
+font-size: 1em;
+line-height: 1;
+text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+letter-spacing: 0.125em;
+animation-duration: 0.01s;
+animation-name: textflicker;
+animation-iteration-count: infinite;
+animation-direction: alternate;">
     {{- partial "header.html" . -}}
-    <main class="mx-auto text-xl" style="font-size: 1.25rem; line-height: 1.75rem">
+    <main class="mx-auto text-base">
         {{- block "main" . }}{{- end }}
     </main>
     {{- partial "footer.html" . -}}
