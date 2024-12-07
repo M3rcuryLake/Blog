@@ -1,7 +1,7 @@
 /* TailwindCSS base styles */
 /* see https://tailwindcss.com/docs/functions-and-directives#tailwind */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Neucha&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Rock+Salt&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Neucha&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Rock+Salt&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,38 +11,91 @@
 /* put site specific css styles here using the @layer directive */
 /* see https://tailwindcss.com/docs/functions-and-directives#layer */
 @keyframes bounce {
-  10% {
-    transform: scaleY(0.3); /* start by scaling to 30% */
-  }
+    10% {
+        transform: scaleY(0.3); /* start by scaling to 30% */
+    }
 
-  30% {
-    transform: scaleY(1); /* scale up to 100% */
-  }
+    30% {
+        transform: scaleY(1); /* scale up to 100% */
+    }
 
-  60% {
-    transform: scaleY(0.5); /* scale down to 50% */
-  }
+    60% {
+        transform: scaleY(0.5); /* scale down to 50% */
+    }
 
-  80% {
-    transform: scaleY(0.75); /* scale up to 75% */
-  }
+    80% {
+        transform: scaleY(0.75); /* scale up to 75% */
+    }
 
-  100% {
-    transform: scaleY(0.6); /* scale down to 60% */
-  }
+    100% {
+        transform: scaleY(0.6); /* scale down to 60% */
+    }
 }
+
+@layer utilities {
+    .scroll-custom {
+        scrollbar-width: thin; /* For Firefox */
+        scrollbar-color: #6b7280 #e5e7eb; /* Thumb (gray-500) and Track (gray-200) */
+    }
+
+    .scroll-custom::-webkit-scrollbar {
+        @apply w-2 h-2; /* Adjust scrollbar width and height */
+    }
+
+    .scroll-custom::-webkit-scrollbar-thumb {
+        @apply bg-gray-500 rounded; /* Thumb styling */
+    }
+
+    .scroll-custom::-webkit-scrollbar-track {
+        @apply bg-gray-200; /* Track styling */
+    }
+}
+
 @layer base {
-  h1 {
-    @apply text-2xl;
-  }
+    .para a {
+        @apply text-red-600 underline;
+    }
+    .para code {
+        @apply bg-gray-800 text-white px-2 py-1 rounded-lg font-Fira text-sm font-extralight;
+    }
+    .para pre {
+        @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto border border-slate-500 scroll-custom;
+    }
+
+    .para pre code {
+        @apply bg-transparent text-gray-100 font-mono text-sm scroll-custom;
+    }
+
+    .para h1 {
+        @apply text-4xl font-bold mb-4 text-yellow-600;
+    }
+
+    .para h2 {
+        @apply text-3xl font-semibold mt-6 mb-3 text-yellow-600;
+    }
+
+    .para h3 {
+        @apply text-2xl font-medium mt-5 mb-2 text-yellow-600;
+    }
+
+    .para p {
+        @apply text-base leading-relaxed my-4;
+    }
+
+    .para blockquote {
+        @apply border-l-4 border-gray-300 pl-4 italic text-gray-200 mb-4;
+    }
 }
 
 @keyframes textflicker {
-  from {
-    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
-  }
-  to {
-    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
-  }
+    from {
+        text-shadow:
+            1px 0 0 #ea36af,
+            -2px 0 0 #75fa69;
+    }
+    to {
+        text-shadow:
+            2px 0.5px 2px #ea36af,
+            -1px -0.5px 2px #75fa69;
+    }
 }
-
