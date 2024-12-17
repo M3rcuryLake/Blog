@@ -6,17 +6,9 @@
     "author": "Ankit Mukherjee",
     "license": "MIT",
     "scripts": {
-        "start": "hugo --gc"
+        "start": "hugo
     },
     "devDependencies": {
-        "@fullhuman/postcss-purgecss": "^4.x",
-        "@tailwindcss/aspect-ratio": "^0.x",
-        "@tailwindcss/forms": "^0.x",
-        "@tailwindcss/line-clamp": "^0.x",
-        "@tailwindcss/typography": "^0.5.x",
-        "autoprefixer": "^10.4.20",
-        "postcss": "^8.4.49",
-        "postcss-cli": "^10.x",
         "tailwindcss": "^3.4.17"
     },
     "browserslist": [
