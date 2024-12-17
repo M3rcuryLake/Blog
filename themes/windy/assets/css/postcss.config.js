@@ -5,7 +5,9 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     content: [
         './hugo_stats.json',
         themeDir + '/hugo_stats.json',
+        'exampleSite/hugo_stats.json',
     ],
+    safelist : [ /type/ ], // this helps to not purge type attributes, this is needed for the Typography plugin
     defaultExtractor: (content) => {
         let els = JSON.parse(content).htmlElements;
         return els.tags.concat(els.classes, els.ids);
