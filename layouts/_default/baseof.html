@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang='{{ .Site.LanguageCode }}'>
-{{ partial "head.html" . }}
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{ partial "head.html" . }}
 
-<body class="font-UbuntuMono text-white bg-no-repeat overflow-x-hidden bg-cover bg-fixed w-screen" style="background-image: url('../../2.gif');
-font-family: Noto Sans Display;
-color: #eee;
-font-size: 1em;
-line-height: 1;
-text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
-letter-spacing: 0.125em;
-animation-duration: 0.01s;
-animation-name: textflicker;
-animation-iteration-count: infinite;
-animation-direction: alternate;">
-    {{- partial "header.html" . -}}
-    <main class="mx-auto text-base">
-        {{- block "main" . }}{{- end }}
-    </main>
-    {{- partial "footer.html" . -}}
-</body>
-
+    <body
+        class="font-VT323 text-white bg-no-repeat overflow-x-hidden bg-cover bg-fixed w-screen text-base leading-none tracking-widest [text-shadow:0.06rem_0_0.06rem_#ea36af,-0.125rem_0_0.06rem_#75fa69] [animation-duration:0.01s] [animation-name:textflicker] [animation-iteration-count:infinite] [animation-direction:alternate] bg-[url('../../2.gif')]"
+    >
+        {{- partial "header.html" . -}}
+        <main class="mx-auto text-base">{{- block "main" . }}{{- end }}</main>
+        {{- partial "footer.html" . -}}
+    </body>
 </html>
