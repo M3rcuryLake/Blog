@@ -1,7 +1,7 @@
 ---
 title: "Dissecting ELFs the Cool Way"
 date: 2025-02-20T01:35:04+05:30
-draft: true
+draft: False
 ---
 
 With the new year came a desperate need for a new side project. So, to overcome boredom, I wrote a fairly simple yet cool disassembler in fairly simple python. Initially, I had planned to make a basic antivirus project—something I had in mind back in twelfth grade. It was supposed to be a simple sandbox environment, passing dynamic analysis results to a free LLM API like Groq or Gemini—not a full-fledged executable analysis toolkit.
