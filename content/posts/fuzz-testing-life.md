@@ -12,8 +12,6 @@ I scouted for perfect situations: like low RSI on the weekly chart and high, exh
 But honestly, this wasn’t always the case. Revenge and emotional trading killed a lot of money. I saw both huge losses and decent profits on a daily basis. In my one-week spree, I earned well, more than I expected too. Still, I wouldn’t recommend doing this daily. I clocked in more hours on this than I slept that week. I was liquidated multiple times, costing me enough to rethink my life. So, in order to kill the cycle, I stopped.
 
 
----
-
 ### _Well, on the other hand..._
 
 It’s kind of been exhausting jumping around Indie Hackers and other boards for random ideas to tinker with. An idle virtual machine is a devil’s prod environment. All of them use AI and vibe coding. In the past couple of weeks, the philosophy of vibe coding has grown tenfold compared to last winter. It made me sit with my laptop and try out code generators like Bolt and Tempo, and honestly, it’s complete magic for real.
@@ -28,11 +26,11 @@ All I thought was that it would add a skill badge in a different trade. I alread
 
 For as a great man once said:
 
-```
-People who list JavaScript frameworks and assembly in the same resume are either dead or schizophrenic.
 
-RIP Terry A. Davis
+> People who list JavaScript frameworks and assembly in the same resume
+> are either dead or schizophrenic.
+>
+> RIP Terry A. Davis
 
-```
 
 
