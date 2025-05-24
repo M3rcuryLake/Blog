@@ -1,25 +1,10 @@
 {{ partial "head.html" . }}
-<script>
-    let mediaBreakpointSize = 600; /* Change this size and test outcome */
-    let scriptTag = "";
-    if (document.documentElement.clientWidth < mediaBreakpointSize) {
-        scriptTag = document.createElement("script");
-        let content =
-            'function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio1"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand; height:60px ; margin-left: auto; margin-right: auto; margin-top:10px",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"pause.png":"play.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}';
-        scriptTag.setAttribute("type", "text/javascript");
-        scriptTag.textContent = content;
-        document.head.appendChild(scriptTag);
-    } else {
-        scriptTag = document.createElement("script");
-        let content =
-            'function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio2"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand; height:60px ; margin-left: auto; margin-right: auto; margin-top:20px",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"pause.png":"play.png";t.setAttribute("src","/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}';
-        scriptTag.setAttribute("type", "text/javascript");
-        scriptTag.textContent = content;
-        document.head.appendChild(scriptTag);
-    }
 
-    console.log(scriptTag);
-</script>
+<script src="https://www.youtube.com/iframe_api"></script>
+
+{{ $yt := resources.Get "js/responsive-youtube.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $yt.Permalink }}" integrity="{{ $yt.Data.Integrity }}"></script>
+
 <article>
     <div class="md:hidden block">
         <div
