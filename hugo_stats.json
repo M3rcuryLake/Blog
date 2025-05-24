@@ -59,7 +59,11 @@
       "animate-ping",
       "animate-pulse",
       "animate-spin",
+      "bg-[url('')]",
+      "bg-[url('../../../background.gif')]",
       "bg-[url('../../2.gif')]",
+      "bg-[url('/../../../background.gif')]",
+      "bg-[url('/../../background.gif')]",
       "bg-[url('/port.gif')]",
       "bg-blue-300",
       "bg-center",
@@ -107,6 +111,7 @@
       "font-BebasNeue",
       "font-Fira",
       "font-Neucha",
+      "font-PermanentMarker",
       "font-RockSalt",
       "font-UbuntuMono",
       "font-VT323",
@@ -219,6 +224,7 @@
       "rounded-lg",
       "rounded-t-lg",
       "rounded-xl",
+      "scanlines",
       "shadow-xl",
       "text-2xl",
       "text-3xl",
@@ -273,6 +279,7 @@
     "ids": [
       "_setup_",
       "_well-on-the-other-hand_",
+      "clock",
       "youtube-audio1",
       "youtube-audio2"
     ]

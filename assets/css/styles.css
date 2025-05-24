@@ -85,7 +85,45 @@
     .para blockquote {
         @apply border-l-4 border-gray-300 pl-4 italic text-gray-200 mb-4;
     }
+
+  .scanlines::before,
+  .scanlines::after {
+    @apply block absolute pointer-events-none content-[''];
+  }
+
+  .scanlines::before {
+    @apply w-full h-[2px] opacity-75;
+    z-index: 2147483649;
+    background: rgba(0, 0, 0, 0.3);
+    animation: scanline 6s linear infinite;
+  }
+
+  .scanlines::after {
+    @apply inset-0;
+    z-index: 2147483648;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.3) 51%);
+    background-size: 100% 4px;
+    animation: scanlines 1s steps(60) infinite;
+  }
+
+  .jpg {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Philips_PM5544.svg/800px-Philips_PM5544.svg.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  @keyframes scanline {
+    0% {
+      transform: translate3d(0, 200000%, 0);
+    }
+  }
+
+  @keyframes scanlines {
+    0% {
+      background-position: 0 50%;
+    }
+  }
 }
+
 
 @keyframes textflicker {
     from {
