@@ -106,15 +106,14 @@
     animation: scanlines 1s steps(60) infinite;
   }
 
-  .jpg {
-    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Philips_PM5544.svg/800px-Philips_PM5544.svg.png") no-repeat center center;
-    background-size: cover;
+  @keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
   }
 
-  @keyframes scanline {
-    0% {
-      transform: translate3d(0, 200000%, 0);
-    }
   }
 
   @keyframes scanlines {

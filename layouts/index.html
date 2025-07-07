@@ -1,15 +1,30 @@
 {{ define "main" }}
-<article class="px-1 py-5 font-UbuntuMono">
+  
+<article class="font-UbuntuMono">
+  <div class="px-1 py-5">
+    
   <!-- TERMINAL SIDE -->
-  <div class="p-2 my-10 mx-10 md:block hidden">
-    <div class="max-w-lg bg-slate-900 rounded-t-lg text-center ">[~]</div>
-    <div class="h-fit max-w-lg bg-slate-700 bg-opacity-80 p-3 rounded-b-lg ">
+<div class="flex justify-between w-full max-w-screen px-4 my-10 ">
+  <!-- Left card -->
+  <div class="max-w-lg w-full md:block hidden">
+    <div class="bg-slate-900 rounded-t-lg text-center">[~]</div>
+    <div class="h-fit bg-slate-700 bg-opacity-80 p-3 rounded-b-lg w-full">
       <h1 class="text-4xl font-extrabold font-VT323" style="text-shadow: 0 0 10px #fff;">@M3rcuryLake</h1>
       <h1 class="text-5xl font-extrabold mt-2">Wired ASF</h1>
       <p class="font-BebasNeue text-xl mt-2">lofi, linux and life</p>
       <a class="text-yellow-400" href="https://github.com/m3rcurylake/">/My Git page/</a>
     </div>
   </div>
+
+  <!-- Right card -->
+  <div class="max-w-lg w-full md:block hidden p-4 rounded-lg">
+  <div class="font-VT323 text-lg"> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [OK] </a> <a href="http://mercurybq3vwbf426l7o7t77od3unpyiy3he7b5jcywdh56kwis4maqd.onion/" style="color: yellow;" class="hover:text-amber-500"> ● tor.service </a> </div>
+  <div class="font-VT323 text-lg"> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [OK] </a> <a href="https://mercurylake.neocities.org/" style="color: yellow;" class="hover:text-amber-500"> ● .neocities.org </a> </div>
+  <div class="font-VT323 text-lg"> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [OK] </a> <a href="https://m3rcurylake.pages.dev/" style="color: yellow;" class="hover:text-amber-500"> ● .pages.dev </a> </div>
+  <div class="font-VT323 text-lg"> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [OK] </a> <a href="https://m3rcurylake.github.io/" style="color: yellow;" class="hover:text-amber-500"> ● .github.io </a> </div>
+  </div>
+  </div>
+</div>
   <!-- TERMINAL MAIN -->
   <div class="p-2 md:p-0 max-w-3xl mx-auto rounded-xl">
     <div class="mx-auto max-w-3xl bg-slate-900 rounded-t-lg text-center">[wired]</div>
@@ -25,7 +40,7 @@
             I am an electronics degenerate who was given unrestricted access to computers at a very young age. In the age of social networks where all the customistation you can do to your profile is add a picture and a bio of five lines, I decided why not, have a spot of your own?
           </p>
             <!-- BUTTONS MOBILE-->
-  <div class="md:hidden mx-auto flex p-2 mt-10 mb-5 md:mx-10  font-BebasNeue">
+  <div class="md:hidden mx-auto flex p-2 mt-10 mb-5 md:mx-10 font-BebasNeue">
     <div><a href="/posts/" class="relative py-2 px-3 font-bold text-black group mx-auto">
       <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-blue-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
       <span class="absolute inset-0 w-full h-full border-4 border-black"></span>
@@ -37,7 +52,7 @@
       <span class="relative ">./Lofi_Cafe</span>
       </a></div>
     </div>
-    <div class="p-3 mx-auto flex md:hidden">
+    <div class="p-3 mx-auto flex md:hidden justify-between mt-20">
       <div class="text-left mr-3" >
         <p>&nbsp;&nbsp;&nbsp; _.-;;-._</p>
         <p>  ^-'|&nbsp;&nbsp; ||&nbsp;&nbsp; |</p>
@@ -46,33 +61,36 @@
         <p>  ^-'|_.-''-._|</p>
         </p>
       </div>
-      <div class=" text-center">
+      <div class=" text-right">
         <div><a href="mailto:neptunymves@protonmail.com" class="text-red-500 hover:text-amber-500">@Mail</a></div>
         <div><a href="https://www.instagram.com/__rn._______?igsh=cWk2ZWhkajRhbDRk" class="text-red-500 hover:text-amber-500">@Instagram</a></div>
         <div><a href="https://discord.gg/GTGjp3sh" class="text-red-500 hover:text-amber-500">@Discord</a></div>
-        <div><a href="http://mercurybq3vwbf426l7o7t77od3unpyiy3he7b5jcywdh56kwis4maqd.onion/" class="text-red-500 hover:text-amber-500">@Tor</a></div>
+        <div><a href="https://www.linkedin.com/in/ankit-mukherjee-0844a3325/" class="text-red-500 hover:text-amber-500">@LinkedIn</a></div>
         <div><a href="https://reddit.com/u/neptunym" class="text-red-500 hover:text-amber-500">@Reddit</a></div>
       </div>
     </div>
       </div>
     </div>
-  </div>
-  <div class="h-52 md:block hidden">
+  <div class="flex justify-between">
   <!-- BUTTONS -->
-  <div class="float-left hidden md:block p-2 mt-10 mx-10 ">
-  <div><a href="/posts/" class="relative px-6 py-3 font-bold text-black group">
-    <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-blue-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
-    <span class="absolute inset-0 w-full h-full border-4 border-black"></span>
-    <span class="relative">./Bl0gs</span>
-    </a></div>
-<div class="mt-10"> <a href="/lofi-cafe/" class="relative px-6 py-3 font-bold text-black group">
-    <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-blue-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
-    <span class="absolute inset-0 w-full h-full border-4 border-black"></span>
-    <span class="relative">./Lofi_Cafe</span>
-    </a></div>
-  </div>
+    <div class=" p-2 mt-10 mx-10 md:block hidden">
+      <div>
+        <a href="/posts/" class="relative px-6 py-3 font-bold text-black group">
+          <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-blue-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+          <span class="absolute inset-0 w-full h-full border-4 border-black"></span>
+          <span class="relative">./Bl0gs</span>
+        </a>
+      </div>
+      <div class="mt-10">
+        <a href="/lofi-cafe/" class="relative px-6 py-3 font-bold text-black group">
+          <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-blue-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+          <span class="absolute inset-0 w-full h-full border-4 border-black"></span>
+          <span class="relative">./Lofi_Cafe</span>
+        </a>
+      </div>
+    </div>
   <!-- TERMINAL EMACS -->
-  <div class="p-2 mx-10 float-right hidden md:block">
+  <div class="p-2 mx-10 md:block hidden">
     <div class="max-w-md bg-slate-900 rounded-t-lg text-center">[EMACS]</div>
     <div class="h-fit max-w-md bg-slate-700 bg-opacity-80 p-3 rounded-b-lg flex">
       <div class="text-left mr-10">
@@ -88,14 +106,15 @@
           <div><a href="mailto:neptunymves@protonmail.com" class="text-red-500 hover:text-amber-500">@Mail</a></div>
           <div><a href="https://www.instagram.com/__rn._______?igsh=cWk2ZWhkajRhbDRk" class="text-red-500 hover:text-amber-500">@Instagram</a></div>
           <div><a href="https://discord.gg/GTGjp3sh" class="text-red-500 hover:text-amber-500">@Discord</a></div>
-          <div><a href="http://mercurybq3vwbf426l7o7t77od3unpyiy3he7b5jcywdh56kwis4maqd.onion/" class="text-red-500 hover:text-amber-500">@Tor</a></div>
+          <div><a href="https://www.linkedin.com/in/ankit-mukherjee-0844a3325/" class="text-red-500 hover:text-amber-500">@LinkedIn</a></div>
           <div><a href="https://reddit.com/u/neptunym" class="text-red-500 hover:text-amber-500">@Reddit</a></div>
 
       </div>
     </div>
     </div>
 
+  </div>
 
-</div>
+  
 </article>
 {{ end }}
