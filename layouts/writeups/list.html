@@ -13,15 +13,15 @@
             >
                 @Writeups_Archive
             </h1>
-            <a class="text-yellow-400" href="https://github.com/m3rcurylake/"
-                >/Listings.../</a
+            <p class="text-yellow-400"
+                >/Listings.../</p
             >
       <div class="font-VT323 text-lg my-5"><a style="color: yellow;" class="hover:text-amber-500"> WRITEUPS COUNT  ●</a> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [{{len .Pages}}] </a>  </div>
 
             {{ range .Pages }}
             <h1 class="text-lg font-extrabold hover:text-blue-400">
                 <a href="{{ .Permalink }}"
-                    ><a class="text-fuchsia-400">>></a>{{ .Title }}</a
+                    ><a class="text-fuchsia-400">>>&nbsp;</a>{{ .Title }}</a
                 >
             </h1>
             {{ end }}
@@ -35,7 +35,7 @@
             class="mx-auto bg-slate-700 rounded-b-lg bg-opacity-80 pt-10 pb-10"
         >
             <h1
-                class="text-2xl xl:hidden block md:text-3xl font-bold text-center mb-2 underline decoration-red-400 md:mt-10"
+                class="text-3xl md:hidden block font-bold text-center mb-2 underline decoration-red-400 md:mt-10 font-VT323"
                 style="text-shadow: 0 0 10px #fff"
             >
                 @Writeups_Archive
