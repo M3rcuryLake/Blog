@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{ partial "head.html" . }}
+
+    <body
+        class="font-VT323 text-white bg-no-repeat overflow-x-hidden bg-cover bg-fixed w-screen text-base leading-none tracking-widest 
+    [text-shadow:0.06rem_0_0.06rem_#ea36af,-0.125rem_0_0.06rem_#75fa69] [animation-duration:0.01s] [animation-name:textflicker]
+    [animation-iteration-count:infinite] [animation-direction:alternate] bg-[url('/../../snow.gif')]"
+    >
+
+    <div class="relative h-screen overflow-hidden">
+      <div class="block z-10 h-full overflow-y-auto">
+      
+        {{- partial "header.html" . -}}
+        <main class="mx-auto text-base">{{- block "main" . }}{{- end }}</main>
+        {{- partial "footer.html" . -}}
+      </div>
+
+    </div>
+    <div class="scanlines pointer-events-none absolute inset-0 z-20"></div>
+
+    </body>
+</html>

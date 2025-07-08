@@ -4,7 +4,7 @@
   <div class="px-1 py-5">
     
   <!-- TERMINAL SIDE -->
-<div class="flex justify-between w-full max-w-screen px-4 my-10 ">
+<div class="flex justify-between w-full max-w-screen px-4 md:my-10 ">
   <!-- Left card -->
   <div class="max-w-lg w-full md:block hidden">
     <div class="bg-slate-900 rounded-t-lg text-center">[~]</div>
@@ -17,11 +17,18 @@
   </div>
 
   <!-- Right card -->
-  <div class="max-w-lg w-full md:block hidden p-4 rounded-lg">
-  <div class="font-VT323 text-lg"> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [OK] </a> <a href="http://mercurybq3vwbf426l7o7t77od3unpyiy3he7b5jcywdh56kwis4maqd.onion/" style="color: yellow;" class="hover:text-amber-500"> ● tor.service </a> </div>
-  <div class="font-VT323 text-lg"> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [OK] </a> <a href="https://mercurylake.neocities.org/" style="color: yellow;" class="hover:text-amber-500"> ● .neocities.org </a> </div>
-  <div class="font-VT323 text-lg"> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [OK] </a> <a href="https://m3rcurylake.pages.dev/" style="color: yellow;" class="hover:text-amber-500"> ● .pages.dev </a> </div>
-  <div class="font-VT323 text-lg"> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [OK] </a> <a href="https://m3rcurylake.github.io/" style="color: yellow;" class="hover:text-amber-500"> ● .github.io </a> </div>
+  <div class="max-w-lg w-full md:p-4 p-2 rounded-lg md:text-lg text-sm ">
+  <div class="grid md:grid-cols-1 grid-cols-2 gap-1">
+  <div class="font-VT323 "> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [OK] </a> <a href="http://mercurybq3vwbf426l7o7t77od3unpyiy3he7b5jcywdh56kwis4maqd.onion/" class="text-yellow-400 hover:underline"> ● tor.service </a> </div>
+  <div class="font-VT323 "> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [OK] </a> <a href="https://mercurylake.neocities.org/" class="text-yellow-400 hover:underline"> ● .neocities </a> </div>
+  <div class="font-VT323 "> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [OK] </a> <a href="https://m3rcurylake.pages.dev/" class="text-yellow-400 hover:underline"> ● .pages.dev </a> </div>
+  <div class="font-VT323 "> <a style="color:lime; text-shadow: 0 0 3px #fff;"> [OK] </a> <a href="https://m3rcurylake.github.io/" class="text-yellow-400 hover:underline"> ● .github.io </a> </div>
+  </div>      
+        <div class="md:block hidden bg-slate-900 w-fit p-2 mt-10 border-white border-5 border-dotted" style="border-style: dashed; border-color: white; border-width: 2px;">
+          <a href="/writeups/" class="font-VT323 font-bold text-2xl hover:text-yellow-400 transition-all duration-150" style="text-shadow: 0 0 4px #fff"> Reverse Engineering Writeups </a>
+          <p class="text-amber-500 text-xs animate-pulse"><i>(take a look!)</i></p>
+        </div>
+
   </div>
   </div>
 </div>
@@ -51,7 +58,13 @@
       <span class="absolute inset-0 w-full h-full border-4 border-black"></span>
       <span class="relative ">./Lofi_Cafe</span>
       </a></div>
-    </div>
+  </div>
+    <div class="ml-2 font-VT323 text-xl md:hidden"><a href="/posts/" class="relative py-2 px-3 font-bold text-black group mx-auto">
+      <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-blue-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+      <span class="absolute inset-0 w-full h-full border-4 border-black"></span>
+      <span class="relative ">./RevEng_Writeups</span>
+      </a></div>
+
     <div class="p-3 mx-auto flex md:hidden justify-between mt-20">
       <div class="text-left mr-3" >
         <p>&nbsp;&nbsp;&nbsp; _.-;;-._</p>
