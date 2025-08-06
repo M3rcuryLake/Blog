@@ -10,7 +10,7 @@ Started off with the usual recon — `readelf` revealed the presence of a `main`
 
 After cleaning things up, the code looked like this:
 
-```
+```c
 #include <stdio.h>
 #include <string.h>
 
@@ -63,7 +63,7 @@ If I could subtract the key used at each position from the scrambled character, 
 
 So I wrote a Python script to reverse the entire transformation:
 
-```
+```py
 def get_shift_amount(iter):  //the "key"
     adder = ((iter >> 1) & 0x55) + (iter & 0x55)
     adder = ((adder >> 2) & 0x33) + (adder & 0x33)
