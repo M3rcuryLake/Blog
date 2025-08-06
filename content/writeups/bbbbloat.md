@@ -11,12 +11,9 @@ This one's similar to picoCTF’s `packer`, except it comes unpacked. Straightfo
 
 `readelf -a bbbbloat` didn’t show anything unusual, just a large number of functions. `strings` also returned nothing revealing.
 
-Loading the binary into Ghidra showed an overwhelming number of functions. Digging into `FUN_00101307`, we see it takes input, stores it in `local_48`, and compares it to the hex value `0x86187`. Submitting the ASCII equivalent in the challenge prompt gives the partial flag:
-**`picoCTF{cu7_...}`**
+Loading the binary into Ghidra showed an overwhelming number of functions. Digging into `FUN_00101307`, we see it takes input, stores it in `local_48`, and compares it to the hex value `0x86187`. Submitting the ASCII equivalent in the challenge prompt gives us the flag: **`picoCTF{cu7_...}`**
 
-Interestingly, I couldn't find the flag in Ghidra itself, it wasn't hardcoded anywhere — `FUN_00101307` only verifies the input. If correct, it passes the value `0x4c75257240343a41` to another function, `FUN_00101259`, which acts like a keygen and generates the actual flag using a Caesar-like encoding algorithm.
-
-cleaning up the code, the keygen logic looks like this:
+Interestingly, I couldn't find the flag in Ghidra itself, it was not hardcoded anywhere — `FUN_00101307` only verifies the input. If correct, it passes the value `0x4c75257240343a41` to another function, `FUN_00101259`, which acts like a keygen and generates the actual flag using a shifting based encoding algorithm. So I dug in, and the kegen algorithm looked impressive. After cleaning up the code, the keygen logic looks like this:
 
 ```c
 char *encode_string(undefined8 unused_param, char *input)
@@ -35,7 +32,7 @@ char *encode_string(undefined8 unused_param, char *input)
             if ((unsigned char)current_char < 0x7F) {
                 encoded_str[i] = current_char;
             } else {
-                encoded_str[i] = current_char - 0x5E;  // Wrap back if it exceeds printable range
+                encoded_str[i] = current_char - 0x5E;
             }
         }
     }
@@ -43,4 +40,3 @@ char *encode_string(undefined8 unused_param, char *input)
     return encoded_str;
 }
 ```
-
