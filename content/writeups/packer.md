@@ -3,7 +3,7 @@ title: "Packer"
 date: 2025-08-02T04:11:46+05:30
 draft: false
 ---
-[packer picoCTF link][https://play.picoctf.org/practice/challenge/421]
+[packer picoCTF link](https://play.picoctf.org/practice/challenge/421)
 
 This wasn’t my first time doing reverse engineering challenges, but it was my first rodeo with picoCTF. Pretty easy overall — I could’ve solved it with my own analysis toolkit (`nyxelf`), but I decided to use Ghidra this time for a change of pace.
 
