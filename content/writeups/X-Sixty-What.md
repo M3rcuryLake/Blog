@@ -70,3 +70,4 @@ if __name__ == "__main__":
     main()
 ```
 
+Not even a medium challenge if you ask me :):
